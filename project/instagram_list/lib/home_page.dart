@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
   @override
   State<Homepage> createState() => _HomepageState();
 }
+
 class _HomepageState extends State<Homepage> {
   // List of users with their profile images and usernames
   final List<Map<String, String>> users = [
@@ -22,7 +24,10 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('INSTAGRAM', style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black)),
+        title: Text(
+          'INSTAGRAM',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black),
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -34,7 +39,7 @@ class _HomepageState extends State<Homepage> {
                 children: List.generate(users.length, (index) {
                   return Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                    child: Container(
+                    child: SizedBox(
                       height: 80,
                       width: 80,
                       child: CircleAvatar(
@@ -54,13 +59,16 @@ class _HomepageState extends State<Homepage> {
                   Row(
                     children: [
                       SizedBox(width: 10),
-                      Container(
+                      SizedBox(
                         height: 30,
                         child: CircleAvatar(
                           backgroundImage: AssetImage(users[index]['image']!),
                         ),
                       ),
-                      Text(users[index]['name']!, style: TextStyle(color: Colors.black)),
+                      Text(
+                        users[index]['name']!,
+                        style: TextStyle(color: Colors.black),
+                      ),
                       Spacer(),
                       Icon(Icons.linear_scale),
                     ],

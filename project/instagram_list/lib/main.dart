@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_list/shoping.dart';
 import 'bottem.dart';
 
 void main() {
@@ -17,9 +18,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
-      home:bottem(),
+      home: shoping_slash(),
     );
   }
 }
-
-

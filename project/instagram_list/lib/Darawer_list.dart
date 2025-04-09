@@ -30,7 +30,7 @@ class _DarawerListState extends State<DarawerList> {
 }
 Widget MyDrawerown(BuildContext context) =>Column(
   children: [
-    Container(
+    SizedBox(
         height:150 ,
         width:100 ,
         child:
@@ -47,8 +47,8 @@ Widget MyDraweryour(BuildContext context) =>Container(
       ListView.separated(itemBuilder: (context, index) {
         return Text('All inbox',style: TextStyle(fontSize: 10),),
       }, separatorBuilder: (context, index) {
-        r
-      }, itemCount: usear.)
+        
+      }, itemCount: usear.length)
     ],
   ),
-)
+);

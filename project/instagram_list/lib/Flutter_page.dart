@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 class beach extends StatefulWidget {
   const beach({super.key});
 
@@ -11,106 +12,119 @@ class _beachState extends State<beach> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-
-        title:Text('HI, PROGRAMER',style: TextStyle(color: Colors.white,fontSize:20),) ,
+        title: Text(
+          'HI, PROGRAMER',
+          style: TextStyle(color: Colors.white, fontSize: 20),
+        ),
         backgroundColor: Colors.blue,
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
-          children: [SizedBox(height: 20,),
-            Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            SizedBox(height: 20),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
-                    Container(height: 60,width: 60,
+                    SizedBox(
+                      height: 60,
+                      width: 60,
                       child: CircleAvatar(
-                        child:Icon(Icons.widgets_outlined),
                         backgroundColor: Colors.green,
+                        child: Icon(Icons.widgets_outlined),
                       ),
                     ),
-                    Text("Category",style: TextStyle(fontSize:20),)
+                    Text("Category", style: TextStyle(fontSize: 20)),
                   ],
                 ),
 
                 Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 60,
                       width: 60,
                       child: CircleAvatar(
-                        child:Icon(Icons.class_rounded),
                         backgroundColor: Colors.blue,
+                        child: Icon(Icons.class_rounded),
                       ),
                     ),
-                    Text('Office',style: TextStyle(fontSize: 20),)
+                    Text('Office', style: TextStyle(fontSize: 20)),
                   ],
                 ),
 
                 Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 60,
                       width: 60,
                       child: CircleAvatar(
-                        child:Icon(Icons.free_cancellation_outlined),
                         backgroundColor: Colors.red,
+                        child: Icon(Icons.free_cancellation_outlined),
                       ),
                     ),
-                    Text('File',style: TextStyle(fontSize: 20),)
+                    Text('File', style: TextStyle(fontSize: 20)),
                   ],
                 ),
               ],
             ),
-            SizedBox(height: 40,),
+            SizedBox(height: 40),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 60,
                       width: 60,
                       child: CircleAvatar(
-                        child:Icon(Icons.widgets_outlined),
                         backgroundColor: Colors.orangeAccent,
+                        child: Icon(Icons.widgets_outlined),
                       ),
                     ),
-                    Text('Windo',style: TextStyle(fontSize: 20),)
+                    Text('Windo', style: TextStyle(fontSize: 20)),
                   ],
                 ),
 
                 Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 60,
                       width: 60,
                       child: CircleAvatar(
-                        child:Icon(Icons.class_rounded),
                         backgroundColor: Colors.pink,
+                        child: Icon(Icons.class_rounded),
                       ),
                     ),
-                    Text('Fule',style: TextStyle(fontSize: 20),)
+                    Text('Fule', style: TextStyle(fontSize: 20)),
                   ],
                 ),
 
                 Column(
                   children: [
-                    Container(
+                    SizedBox(
                       height: 60,
                       width: 60,
                       child: CircleAvatar(
-                        child:Icon(Icons.free_cancellation_outlined),
                         backgroundColor: Colors.deepPurple,
+                        child: Icon(Icons.free_cancellation_outlined),
                       ),
                     ),
-                    Text('Note',style: TextStyle(fontSize: 20),)
+                    Text('Note', style: TextStyle(fontSize: 20)),
                   ],
                 ),
               ],
-            ),ListTile(
-              leading:  Text('COURSES',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),),
-              trailing:  Text('See All',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 15),),
+            ),
+            ListTile(
+              leading: Text(
+                'COURSES',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25),
+              ),
+              trailing: Text(
+                'See All',
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),
+              ),
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -118,62 +132,56 @@ class _beachState extends State<beach> {
                 Column(
                   children: [
                     Container(
-                      height:200 ,
+                      height: 200,
                       width: 150,
-                      child:
-                      Image.asset('assets/dap1 (4).png'),
                       color: Colors.white,
+                      child: Image.asset('assets/dap1 (4).png'),
                     ),
-                    Text('Flutter',style: TextStyle(fontSize: 20),)
+                    Text('Flutter', style: TextStyle(fontSize: 20)),
                   ],
                 ),
-                SizedBox(width: 20,),
+                SizedBox(width: 20),
                 Column(
                   children: [
                     Container(
-                      height:200 ,
+                      height: 200,
                       width: 150,
-
-                      child:
-                      Image.asset('assets/dap2.png'),
                       color: Colors.white,
 
+                      child: Image.asset('assets/dap2.png'),
                     ),
-                    Text('Python',style: TextStyle(fontSize: 20),)
+                    Text('Python', style: TextStyle(fontSize: 20)),
                   ],
-                )
+                ),
               ],
             ),
-            SizedBox(height: 20,),
+            SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Column(
                   children: [
                     Container(
-                      height:200 ,
+                      height: 200,
                       width: 150,
-                      child:
-                      Image.asset("assets/dap1 (3).png"),
                       color: Colors.grey,
-
+                      child: Image.asset("assets/dap1 (3).png"),
                     ),
-                    Text('C++',style: TextStyle(fontSize: 20),)
+                    Text('C++', style: TextStyle(fontSize: 20)),
                   ],
                 ),
-                SizedBox(width: 20,),
+                SizedBox(width: 20),
                 Column(
                   children: [
                     Container(
-                      height:200 ,
+                      height: 200,
                       width: 150,
-                      child:
-                      Image.asset("assets/dap1.png"),
                       color: Colors.grey,
+                      child: Image.asset("assets/dap1.png"),
                     ),
-                    Text('React Native',style: TextStyle(fontSize: 20),)
+                    Text('React Native', style: TextStyle(fontSize: 20)),
                   ],
-                )
+                ),
               ],
             ),
           ],
