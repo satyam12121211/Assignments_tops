@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram/main.dart';
 class SplashScreen extends StatefulWidget {
   @override
   _SplashScreenState createState() => _SplashScreenState();

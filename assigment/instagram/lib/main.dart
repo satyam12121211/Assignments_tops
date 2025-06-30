@@ -1,11 +1,11 @@
 // main.dart
 import 'package:flutter/material.dart';
+import 'package:instagram/insta/ForgotPasswordScreen.dart';
+import 'package:instagram/insta/HomeScreen.dart';
+import 'package:instagram/insta/LoginScreen.dart';
+import 'package:instagram/insta/RegisterScreen.dart';
+import 'package:instagram/insta/SplashScreen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'screens/splash_screen.dart';
-import 'screens/login_screen.dart';
-import 'screens/register_screen.dart';
-import 'screens/home_screen.dart';
-import 'screens/forgot_password_screen.dart';
 
 void main() {
   runApp(MyApp());
